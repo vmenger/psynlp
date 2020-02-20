@@ -6,8 +6,7 @@ The `preprocessing` submodule implements some basic functionality for preprocess
 * Sentence splitting
 * Tokenizing
 
-The abstract classes  `Normalizer`, `SentenceSplitter` and `Tokenizer` define the interface (see table below), with ready-to-use implementations provided in the implementation classes. It is always possible to use/define your own custom normalizer, sentence splitter or tokenizer, by creating a new class with your own custom logic. The current implementations (`BasicNormalizer`,  `BasicSentenceSplitter`, `SpacyTokenizer`) are used in other projects, so beware that changing them might lead to unexpected behaviour in other projects (e.g. nlp resource training, decursus/rapportage pipelines). 
-
+The abstract classes  `Normalizer`, `SentenceSplitter` and `Tokenizer` define the interface (see table below), with ready-to-use implementations provided in the implementation classes. It is always possible to use/define your own custom normalizer, sentence splitter or tokenizer, by creating a new class with your own custom logic. 
 | Abstract Class | Functions | Implementations
 |--|--|--|
 | `Normalizer` | `normalize` | `BasicNormalizer`

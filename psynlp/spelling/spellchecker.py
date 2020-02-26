@@ -55,7 +55,9 @@ class SpellChecker:
         self.lexicon = set([])
 
         # Initialize by reading all files in lexicons/*.txt and adding to the lexicon
-        for path in glob.glob(get_local_resource(os.path.join('lexicons', '*.txt'))):
+        lexicon_path = get_local_resource('lexicons')
+
+        for path in glob.glob(os.path.join(lexicon_path, '*.txt')):
 
             with open(path, 'r') as file:
                 words = file.read().split("\n")

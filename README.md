@@ -15,6 +15,7 @@ These submodules are further documented in their respective readmes, which you w
 Since some paths need to be initialized, installation is most easily done by downloading the source, modifying paths in (`psynlp/utils.py` -- see Requirements below), and running:
 
 ```sh
+pip install -r requirements.txt
 python setup.py install 
 ```
 

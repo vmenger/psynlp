@@ -13,6 +13,9 @@ with open(path.join(here, 'psynlp', '__version__.py')) as fp:
 with open("README.md", "r") as fh:
     readme = fh.read()
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
 setup(
     name='psynlp',
 
@@ -41,12 +44,5 @@ setup(
     # What does your project relate to?
     keywords=['psychiatry', 'nlp', 'clinical text'],
 
-    install_requires=[
-                    'doublemetaphone',
-                    'gensim', 
-                    'nltk', 
-                    'pandas', 
-                    'psydata',
-                    'spacy', 
-                    ],
+    install_requires=requirements,
 )

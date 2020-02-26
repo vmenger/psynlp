@@ -1,0 +1,6 @@
+doublemetaphone
+gensim
+nltk
+unidecode
+pandas
+spacy

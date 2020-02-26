@@ -25,7 +25,6 @@ The `psynlp` package has the following dependencies (automatically installed whe
 * `gensim`
 * `nltk`
 * `pandas`
-* `psydata`
 * `spacy` 
 
 ## Requirements

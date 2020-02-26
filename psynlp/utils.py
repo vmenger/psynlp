@@ -1,6 +1,5 @@
 import pkg_resources
 import os
-import psydata
 
 def get_local_resource(resource_path):
     return pkg_resources.resource_filename('psynlp', os.path.join('resources', resource_path))

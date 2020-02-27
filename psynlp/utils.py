@@ -6,12 +6,12 @@ def get_local_resource(resource_path):
 
 def get_global_resource(resource_path):
 
-	### TODO: refer this path to a folder where you store: 
-	# * A spacy model in the /spacy directory (different models can be specified when using the package)
-	# * A gensim model in the /gensim directory called word2vec.model
-	# * A token_frequencies.csv file that is ;-separated and contains a "token" and "frequency" column
-	
-	GLOBAL_RESOURCE_PATH = "C:/Documents" # change this line
+    ### TODO: refer this path to a folder where you store: 
+    # * A spacy model in the /spacy directory (different models can be specified when using the package)
+    # * A gensim model in the /gensim directory called word2vec.model
+    # * A token_frequencies.csv file that is ;-separated and contains a "token" and "frequency" column
+
+    GLOBAL_RESOURCE_PATH = "C:/Documents" # change this line
 
     return os.path.join(GLOBAL_RESOURCE_PATH, resource_path) # don't change this line
 

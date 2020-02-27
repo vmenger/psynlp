@@ -387,8 +387,8 @@ class ContextMatcher:
 
     def match_context(self, text, entities):
 
-    	if len(entities) > 0:
+        if len(entities) > 0:
 
-	        self._match_triggers(text)
+            self._match_triggers(text)
 
-	        self._process_matches(entities)
+            self._process_matches(entities)

@@ -43,7 +43,8 @@ class SpellChecker:
             print("", "=== Initializing spacy tokenizer ===")
 
         nlp_model_path = get_global_resource(
-            os.path.join('spacy', spacy_model))
+            os.path.join('spacy', self.spacy_model))
+        
         nlp = spacy.load(nlp_model_path)
         self.tokenize = lambda x: nlp(x, disable=['tagger', 'parser', 'ner'])
 

@@ -42,7 +42,7 @@ Some functionality requires specific models, which are not included in the repos
 
 ```python
 from psynlp.spelling import SpellChecker
-c = SpellChecker()
+c = SpellChecker(spacy_model="your_spacy_model_name")
 c.correct("Dit is een tekst met daarin een splefout")
 >>> "Dit is een tekst met daarin een spelfout"
 ```

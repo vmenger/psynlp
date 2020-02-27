@@ -27,7 +27,7 @@ class SpellChecker:
         self.many_texts = many_texts
 
         # tokenizer
-        self._init_tokenizer()
+        self._init_tokenizer(spacy_model)
 
         # lexicon
         self._init_lexicon()
@@ -43,7 +43,7 @@ class SpellChecker:
             print("", "=== Initializing spacy tokenizer ===")
 
         nlp_model_path = get_global_resource(
-            os.path.join('spacy', self.spacy_model))
+            os.path.join('spacy', spacy_model))
         
         nlp = spacy.load(nlp_model_path)
         self.tokenize = lambda x: nlp(x, disable=['tagger', 'parser', 'ner'])

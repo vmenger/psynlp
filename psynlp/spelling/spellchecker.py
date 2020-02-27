@@ -38,7 +38,7 @@ class SpellChecker:
         # ranker
         self._init_ranker(use_ranker)
 
-    def _init_tokenizer(self):
+    def _init_tokenizer(self, spacy_model):
         if self.verbose:
             print("", "=== Initializing spacy tokenizer ===")
 

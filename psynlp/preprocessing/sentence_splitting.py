@@ -50,7 +50,7 @@ class SentenceSplitter(ABC):
     def _read_abbreviations(self):
 
         abbreviation_filepaths = get_local_resource(
-            'abbreviation_lists/abbrev_*.txt')
+            'abbreviation_lists/*.txt')
 
         for abbrev_filepath in glob.glob(abbreviation_filepaths):
 

@@ -1,5 +1,6 @@
-
 # `psynlp` --- NLP functionality for psychiatric text
+
+> :exclamation: Most of the functionality in this project has now been made available the library [clinlp: production ready NLP pipelines for Dutch Clinical Text](https://github.com/umcu/clinlp). Although the code here might still benefit some projects, the project itself is no longer maintained (and thus archived).
 
 This package bundles some functionality for applying NLP (preprocessing) techniques to clinical text in psychiatry. Specifically, it contains the following `submodules`: 
 
